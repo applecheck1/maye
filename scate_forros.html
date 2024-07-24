@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title id="titulo"></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/carrito.css">
+  <link rel="stylesheet" href="style/modal.css">
+  <script src="productos.js"></script>
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="pt-1">
+    <div class="container mt-2 text-center">
+      <h1 id="disponibleHTML"></h1>
+    </div>
+
+    <section class="row justify-content-center" id="productos-container"></section>
+  </main>
+
+  <!-- Modal Mostrar Imagenes -->
+  <div id="imageModal" class="modal">
+    <div class="h-100 d-flex justify-content-center align-items-center">
+      <div class="modal-content">
+        <div class="d-flex flex-row align-items-center justify-content-between">
+          <h5 class="card-title font-weight-bold" id="nombreMmodal">.</h5>
+          <span class="close">&times;</span>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <img class="modal-image" src="" alt="Image">
+        </div>
+        <div class="modal-nav">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Mostrar Producto del Carrito -->
+
+  <!-- Icono de carrito flotante -->
+  <a href="#" id="carrito-icon" class="carrito-icon" onclick="mostrarCarrito()">
+    <img src="img/carrito.png" alt="Carrito de Compras">
+    <span id="carrito-cantidad">0</span>
+  </a>
+
+  <div id="carrito" class="carrito">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="mb-0">Carrito</h2>
+      <button class="enviarPedido btn btn-light" onclick="borrar_carro()">Borrar pedido</button>
+    </div>  
+      <ul id="lista-carrito"></ul>
+      <p id="total">Total: $0</p>
+      <div class="d-flex justify-content-center align-items-center">
+        <button class="enviarPedido btn btn-light" onclick="enviarPedido()">Enviar por WhatsApp</button>
+      </div>
+  </div>
+
+  <footer id="footer"></footer>
+
+  <!-- Scripts de Bootstrap y Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="scripts/script_capas_scate.js"></script>
+  <script src="scripts/scate_forros.js"></script>
+  <script src="scripts/carrito_forros.js"></script>
+  <script src="borrar_compra_forros.js"></script>
+</body>
+</html>

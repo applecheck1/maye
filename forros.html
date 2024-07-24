@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title id="titulo"></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="d-flex flex-column mt-5 align-items-center">
+    <h2>Forros Disponibles</h2>
+    <ul>
+      <li><a id="forros_iphone" onclick="forro(this.id)" href="forros_iphone.html">Iphone</a></li>
+      <li><a id="forros_samsung" onclick="forro(this.id)" href="forros_samsung.html">Samsung</a></li>
+      <li><a id="forros_xiaomi" onclick="forro(this.id)" href="forros_xiaomi.html">Xiaomi</a></li>
+      <li><a id="forros_motorola" onclick="forro(this.id)" href="forros_motorola.html">Motorola</a></li>
+      <li><a id="forros_huawei" onclick="forro(this.id)" href="scate.html">Huawei</a></li>
+    </ul>
+  </main>
+  <script>
+    function forro(id){
+      localStorage.setItem("forro",id)
+    }
+  </script>
+
+  <footer id="footer"></footer>
+
+  <!-- Scripts de Bootstrap y Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="scripts/script_capas_scate.js"></script>
+  <script src="scripts/categorias.js"></script>
+</body>
+</html>

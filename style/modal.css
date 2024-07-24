@@ -1,0 +1,75 @@
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    /*margin-top: 10% auto; /* 15% from the top and centered */
+    padding-top: 10px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid #888;
+    width: 95%; /* Could be more or less, depending on screen size */
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    color: #979797;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Image */
+.modal-image {
+    width: 500px !important;
+    max-width: 100% !important;
+    /*object-fit: contain;*/
+}
+
+@media (max-width: 768px) {
+    .modal-image {
+        width: 1000px !important;
+        max-width: 100% !important;
+        /*object-fit: contain;*/
+    }
+}
+/* Navigation Buttons */
+.modal-nav {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.prev,
+.next {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
