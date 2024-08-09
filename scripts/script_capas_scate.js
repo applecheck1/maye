@@ -13,7 +13,7 @@ header.innerHTML = `
   <div class="col">
     <nav class="text-center">
       <a class="btn btn-light mb-1" href="indexx.html"><span style="color: red">Categorías</span></a>
-      <a class="btn btn-light mb-1" target="_blank" href="https://wa.me/573155370380?text=Hola%20">Contáctanos</a>
+      <a class="btn btn-light mb-1" target="_blank" href="https://wa.me/573163748711?text=Hola%20">Contáctanos</a>
     </nav>
   </div>
 </div>

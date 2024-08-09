@@ -12,7 +12,7 @@ heade.innerHTML = `
   </div>
   <div class="col">
     <nav class="text-center">
-      <a class="btn btn-light" target="_blank" href="https://wa.me/573155370380?text=Hola%20">Contáctanos</a>
+      <a class="btn btn-light" target="_blank" href="https://wa.me/573163748711?text=Hola%20">Contáctanos</a>
     </nav>
   </div>
 </div>

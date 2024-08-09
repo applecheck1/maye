@@ -200,6 +200,6 @@ function enviarPedido() {
 
     mensaje += `✅ Total: *${formato(total)}*\n`;
 
-    const linkWhatsApp = `https://wa.me/573155370380/?text=${encodeURIComponent(mensaje)}`;
+    const linkWhatsApp = `https://wa.me/573163748711/?text=${encodeURIComponent(mensaje)}`;
     window.open(linkWhatsApp, '_blank');
 }
